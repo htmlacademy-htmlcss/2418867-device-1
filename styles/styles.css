@@ -1,0 +1,515 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  margin: 0;
+  list-style: none;
+}
+
+.page-header {
+  background-color: #FFE17F;
+  width: 1160px;
+  margin: 0 auto;
+
+}
+
+.logo-href {
+
+}
+
+.logo {
+
+}
+
+.navigation {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.search-line {
+  display: flex;
+}
+
+.search-form {
+
+}
+
+.search-input {
+
+}
+
+.search-button {
+
+
+}
+
+.user-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.user-item {
+  width: 231px;
+}
+
+.basket-item {
+  display: flex;
+  width: 240px;
+}
+
+.user-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-block {
+
+}
+.catalog-block {
+
+}
+.catalog-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.subcatalog {
+
+}
+
+.subcatalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.subcatalog-item {
+
+}
+
+.subcatalog-link {
+  color:#000000;
+  text-decoration: none;
+}
+
+.navigation-service {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-service-item {
+
+}
+
+.navigation-service-link {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-index {
+
+}
+.welcome {
+
+}
+
+
+.slider-container {
+
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-screen {
+
+}
+.slider-image-block {
+
+}
+
+.slider-image {
+
+}
+.slider-text-block {
+
+}
+
+.slider-text {
+  margin: 0;
+  font-family: "Raleway";
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #000000;
+}
+
+.slider-description {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  color: #444444;
+}
+
+.slider-link {
+  list-style: none;
+  color: #000000;
+  text-decoration: none;
+  font-family: "Raleway";
+}
+
+.slider-parameters {
+
+}
+
+.slider-parameter {
+
+}
+
+.parameter-name {
+
+}
+
+.parameter-value {
+  margin: 0;
+
+}
+
+.slider-left {
+
+}
+
+.slider-right {
+
+}
+
+.bullits {
+  margin: 0;
+  padding: 0;
+
+}
+
+.bullit-item {
+  list-style: none;
+}
+
+.button {
+
+}
+
+
+.assortment {
+
+}
+
+.assortment-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.assortment-item {
+
+}
+
+.assortment-link {
+  margin-right: 40px;
+  text-decoration: none;
+  font-weight: 800;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Raleway";
+}
+
+.delivery {
+
+}
+
+.delivery-list {
+  margin: 0;
+  padding: 0;
+
+}
+
+.delivery-item {
+
+}
+
+.delivery-button .delivery-button-current {
+
+}
+
+.delivery-button {
+
+}
+
+.delivery-screens {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.delivery-item {
+
+}
+
+.delivery-title {
+
+}
+
+.delivery-text {
+
+}
+
+.delivery-rare {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: normal;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Raleway";
+}
+
+.info {
+
+}
+
+.info-about {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-family: "Raleway";
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.info-description {
+  margin: 0;
+  line-height: 30px;
+  color: #444444;
+}
+
+.info-list-more {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-ltem-more {
+
+}
+.info-more-detailed {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.contacts {
+
+}
+
+.contacts-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.contacts-text {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+}
+
+.contacts-desc {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-address {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+}
+
+.contacts-phone {
+  text-decoration: none;
+  color: #444444;
+}
+
+.contacts-time {
+  color: #444444;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;f
+  color: #444444;
+}
+
+.contacts-item-time {
+
+}
+
+.contacts-button {
+  text-decoration: none;
+  font-weight: 800;
+  color: #000000;
+}
+
+.mailing {
+  background-color: #F0F0F0;
+}
+
+.mailing-title {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.mailing-text {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+}
+
+.mailing-button {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+
+}
+
+.mailing-free {
+  color: #444444;
+  padding: 0;
+  margin: 0;
+}
+
+.page-footer {
+  background-color: #444444;
+
+}
+
+.page-footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.page-footer-address {
+
+}
+
+.page-footer-logo {
+
+}
+
+.page-footer-address-more {
+  font-size: 16px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer-navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-navigation-item {
+
+}
+
+.footer-navigation-link {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+}
+.footer-social-item .button {
+
+}
+
+.footer-phone {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-phone-item {
+
+}
+
+.contacts-phone {
+  font-size: 16px;
+}
+
+.htmlacademy-link {
+
+}

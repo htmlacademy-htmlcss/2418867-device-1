@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
   <header class="page-header">
     <a class="logo-href" href="#">
-      <img class="logo" src="#" alt="Логотип Device.">
+      <img class="logo" src="images/logo_header.svg" alt="Логотип Device.">
     </a>
     <nav class="navigation">
       <div class="search-line">
@@ -21,12 +21,14 @@
           <li class="user-item">
             <a href="" class="user-link">Войти</a>
           </li>
+          <div class="basket-item">
           <li class="user-item">
             <a href="" class="user-link">Сравнить</a>
           </li>
           <li class="user-item">
             <a href="" class="user-link">Корзина</a>
           </li>
+        </div>
         </ul>
       </div>
       <div class="navigation-block">
@@ -81,7 +83,7 @@
         <ul class="slider-list">
           <li class="slider-screen">
             <div class="slider-image-block">
-              <img src="" alt="" class="slider-image">
+              <img src="images/slider-1.png" alt="Кадрокоптер Девайс" class="slider-image" width="560px" height="560px">
             </div>
             <div class="slider-text-block">
               <p class="slider-text">Порхает как бабочка, жалит как пчела!</p>
@@ -102,7 +104,7 @@
           </li>
           <li class="slider-screen">
             <div class="slider-image-block">
-              <img src="" alt="" class="slider-image">
+              <img src="images/slider-2.png" alt="slider-2" class="slider-image" width="560px" height="560px">
             </div>
             <div class="slider-text-block">
               <p class="slider-text">Худеем правильно!</p>
@@ -118,7 +120,7 @@
           </li>
           <li class="slider-screen">
             <div class="slider-image-block">
-              <img src="" alt="" class="slider-image">
+              <img src="images/slider-3.png" alt="slider-3" class="slider-image" width="560px" height="560px">
             </div>
             <div class="slider-text-block">
               <p class="slider-text">Делай селфи, как Бен Стиллер!</p>
@@ -173,31 +175,20 @@
           <a href="#" class="assortment-link">Виртуальная реальность</a>
         </li>
         <li class="assortment-item">
-          <p><a href="#"><img class="assortment-img" src="#" alt="Моноподы
-            для селфи"></a>
-          <h3 class="assortment-block">Моноподы
-            для селфи</h3>
-          </p>
+          <a href="#" class="assortment-link">Моноподы
+            для селфи</a>
         </li>
         <li class="assortment-item">
-          <p><a href="#"><img class="assortment-img" src="#" alt="Экшн-камеры"></a>
-          <h3 class="assortment-block">Экшн-камеры</h3>
-          </p>
+          <a href="#" class="assortment-link">Экшн-камеры</a>
         </li>
         <li class="assortment-item">
-          <p><a href="#"><img class="assortment-img" src="#" alt="Фитнес-браслеты"></a>
-          <h3 class="assortment-block">Фитнес-браслеты</h3>
-          </p>
+          <a href="#" class="assortment-link">Фитнес-браслеты</a>
         </li>
         <li class="assortment-item">
-          <p><a href="#"><img class="assortment-img" src="#" alt="Умные часы"></a>
-          <h3 class="assortment-block">Умные часы</h3>
-          </p>
+          <a href="#" class="assortment-link">Умные часы</a>
         </li>
         <li class="assortment-item">
-          <p><a href="#"><img class="assortment-img" src="#" alt="Квадрокоптеры"></a>
-          <h3 class="assortment-block">Квадрокоптеры</h3>
-          </p>
+          <a href="#" class="assortment-link">Квадрокоптеры</a>
         </li>
       </ul>
     </section>
@@ -238,7 +229,7 @@
       </p>
       <p class="info-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
         компаниями:</p>
-      <ul>
+      <ul class="info-list-more">
         <li class="info-item-more">
           Меловые линии
         </li>
@@ -273,18 +264,18 @@
       <p class="mailing-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <input name="email" type="text">
-        <button type="submit">Подписаться</button>
+        <button type="submit" class="mailing-button">Подписаться</button>
       </form>
       <p class="mailing-free">Это бесплатно</p>
     </section>
   </main>
   <footer class="page-footer">
     <section class="page-footer-address">
-      <img class="page-footer-logo" src="#" alt="Логотип Device.">
+      <img class="page-footer-logo" src="images/logo_footer.svg" alt="Логотип Device.">
       <address class="page-footer-address-more">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
     </section>
     <section>
-      <ul class="footer-navigation-list-" class="footer-navigation-contacts">
+      <ul class="footer-navigation-list" class="footer-navigation-contacts">
         <li class="footer-navigation-item">
           <a class=footer-navigation-link href="#">Доставка</a>
         </li>
