@@ -207,6 +207,7 @@ body {
 .welcome {
   width: 1160px;
   margin: 0 auto;
+  padding-bottom: 70px;
 }
 
 
@@ -330,6 +331,7 @@ body {
 
 
 .assortment {
+  padding-bottom: 70px;
   width: 1160px;
   margin: 0 auto;
 }
@@ -363,34 +365,86 @@ body {
 }
 
 .delivery {
-  display: none;
+  width: 1160px;
+  margin: auto;
+  padding-bottom: 70px;
+}
+
+.delivery-box {
+  display: flex;
+  justify-content: space-between  ;
 }
 
 .delivery-list {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.delivery-item {
 
 }
 
-.delivery-item {}
+.delivery-item:not(:last-child) {
+  margin-bottom: 35px;
+}
 
-.delivery-button .delivery-button-current {}
+.delivery-button {
+}
 
-.delivery-button {}
+.delivery-button .delivery-button-current {
+
+}
+
+
 
 .delivery-screens {
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
 }
 
-.delivery-item {}
+.delivery-screens::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 200px;
+}
 
-.delivery-title {}
+.delivery-item {
+}
 
-.delivery-text {}
+.delivery-item-active {
+
+}
+
+.delivery-title {
+  margin: 0;
+  font-family: "Raleway";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+  margin-bottom: 34px;
+}
+
+.delivery-title-active {
+
+}
+.delivery-text {
+  margin: 0;
+  width: 452px;
+  min-height: 90px;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
 
 .delivery-rare {
+  display: none;
   text-decoration: none;
   font-size: 20px;
   font-weight: 800;
@@ -403,7 +457,7 @@ body {
 .info-contacts {
   margin: 0 auto;
   width: 1160px;
-  padding: 70px 0;
+  padding-bottom: 70px;
 }
 
 .info-contact {
