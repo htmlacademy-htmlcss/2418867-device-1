@@ -465,24 +465,53 @@ body {
   align-self: flex-end;
   position: relative;
   display: inline-block;
-  padding: 10px 50px 10px 0;
+  padding: 10px 65px 10px 0;
   min-height: 50px;
   box-sizing: border-box;
 }
 
-.catalog-link::after {
-  content: "";
-  top: 0;
-  right: -17px;
-  width: 50px;
-  height: 50px;
+.catalog-block:hover .catalog-plus {
+  opacity: 1;
+}
+
+.catalog--plus {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: solid 2px;
+  opacity: 0.3;
+  display: inline-block;
   position: absolute;
-  background-color: #ffe17f;
+  top: 0px;
+  right: -2px;
+  z-index: -1;
+}
+
+.catalog-link:hover .catalog-plus {
+  opacity: 1;
 }
 
 .catalog--plus::after {
-  background-image: url("../images/plus.svg");
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  top: 22px;
+  left: 15px;
+  transform: rotate(90deg);
 }
+
+.catalog--plus::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  top: 22px;
+  left: 15px;
+}
+
 
 .subcatalog {
   display: none;
@@ -497,11 +526,21 @@ body {
   gap: 30px;
 }
 
-.catalog-block:hover .subcatalog,
-.catalog-block:focus-within .subcatalog {
+.catalog-block:focus-within .subcatalog,
+.catalog-block:active .subcatalog {
   display: flex;
   padding-top: 14px;
 }
+
+.catalog-block:hover .catalog--plus {
+  opacity: 1;
+}
+
+.catalog-block:focus-within .catalog--plus::after,
+.catalog-block:active .catalog--plus::after {
+  opacity: 0;
+}
+
 
 .subcatalog-list {
   margin: 0;
@@ -515,6 +554,18 @@ body {
 .subcatalog-link {
   color: #000000;
   text-decoration: none;
+}
+
+.subcatalog-link:hover {
+  opacity: 0.6;
+}
+
+.subcatalog-link:active {
+  opacity: 0.3;
+}
+
+.subcatalog-link-active {
+  border-bottom: solid 2px;
 }
 
 .navigation-service {
@@ -542,6 +593,18 @@ body {
   letter-spacing: 3.6px;
   padding-top: 11px;
   display: block;
+}
+
+.navigation-service-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-service-link:active {
+  opacity: 0.3;
+}
+
+.nav-active-service-link {
+  border-bottom: solid 2px;
 }
 
 .main-index {
@@ -2188,6 +2251,35 @@ li .contacts-phone {
   min-height: 40px;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
+}
+
+.product-new {
+  display: inline-block;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 27px;
+  right: 29px;
+  border: solid 2px rgba(0, 0, 0, 0.60);
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.product-new::after {
+  position: absolute;
+  content: "New";
+  top: 19px;
+  left: 8px;
+  color: rgba(0, 0, 0, 0.60);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
 }
 
 .product-title {
