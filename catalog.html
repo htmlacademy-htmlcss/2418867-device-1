@@ -23,7 +23,7 @@
         </form>
         <ul class="user-menu">
           <li class="visually-hidden user-item-enter">
-            <a href="№" class="user-link user--enter">Войти</a>
+            <a href="№" class="visually-hidden user-link user--enter">Войти</a>
           </li>
           <li class="user-item-enter">
             <a href="№" class="user-link user--enter">Коля Петухов</a>
@@ -39,17 +39,21 @@
                 <div class="sub-basket">
                   <ul class="sub-basket-list">
                     <li class="sub-basket-item">
-                      <img class="sub-product-basket" src="images/product-1-small.jpg" alt="product-backet-1"
-                        width="39px" height="43px">
-                      <h3 class="sub-product-name">Любительская селфи-палка</h3>
+                      <a class="sub-basket-link" href="#">
+                        <img class="sub-product-basket" src="images/product-1-small.jpg" alt="product-backet-1"
+                          width="39" height="43">
+                        <h3 class="sub-product-name">Любительская селфи-палка</h3>
+                        <button class="sub-basket-button"></button>
+                      </a>
                     </li>
                     <li class="sub-basket-item">
-                      <img class="sub-product-basket" src="images/product-2-small.jpg" alt="product-backet-2"
-                        width="39px" height="43px">
-                      <h3 class="sub-product-name">Профессиональная селфи-палка</h3>
+                      <a class="sub-basket-link" href="#">
+                        <img class="sub-product-basket" src="images/product-2-small.jpg" alt="product-backet-2"
+                          width="39" height="43">
+                        <h3 class="sub-product-name">Профессиональная селфи-палка</h3>
+                        <button class="sub-basket-button"></button>
+                      </a>
                     </li>
-                  </ul>
-                  <ul class="sum-basket-list">
                     <li class="sum-basket-item">
                       <p class="sum-basket-product">Товаров: 2</p>
                       <p class="sum-basket-value">Сумма: 2000 ₽</p>
@@ -108,7 +112,7 @@
     </nav>
   </header>
   <main class="main-inner">
-    <header class="navigation-main">
+    <div class="navigation-main">
       <div class="navigation-main-block">
         <h1 class="navigation-title">Моноподы для селфи</h1>
         <ul class="navigation-list">
@@ -123,7 +127,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </div>
     <section class="catalog">
       <div class="catalog-size">
         <div class="catalog-blocks">
@@ -206,12 +210,22 @@
                 <option value="popular">Сначала дешёвое</option>
                 <option value="popular">Сначала дорогое</option>
               </select>
-              <a href="#" class="button-up button-light">
-                <span class="visually-hidden">Показать список</span>
-              </a>
-              <a class="button-down" href="#">
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
+              <button class="button-up button-light">
+                <svg class="button-svg-catalog" width="12" height="10" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+                  <g id="sort-up" clip-path="url(#clip0_48837_186)">
+                  <path id="Vector" d="M6 0L11.5 10H0.5"/>
+                  </g>
+                  </svg>
+                <span class="visually-hidden">Отсортировать по возрастанию</span>
+              </button>
+              <butuon class="button-down">
+                <svg class="button-svg-catalog" width="12" height="10" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+                  <g id="sort-down" clip-path="url(#clip0_48837_186)">
+                  <path id="Vector" d="M6 0L11.5 10H0.5"/>
+                  </g>
+                  </svg>
+                <span class="visually-hidden">Отсортировать по убыванию</span>
+              </button>
             </div>
             <div class="background-product">
               <div class="product-image-block">
