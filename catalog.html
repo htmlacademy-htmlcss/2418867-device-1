@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
 </head>
 
 <body>
@@ -17,25 +18,26 @@
       <div class="search-line">
         <form action="#" class="search-form">
           <label class="search-label">
-          <input class="search-input search-input-catalog" type="text" name="search-text" placeholder="Текст поиска">
-        </label>
+            <input class="search-input search-input-catalog" type="text" name="search-text" placeholder="Текст поиска">
+          </label>
           <button type="submit" class="search-button">Найти</button>
         </form>
-        <ul class="user-menu">
-          <li class="visually-hidden user-item-enter">
-            <a href="№" class="visually-hidden user-link user--enter">Войти</a>
-          </li>
-          <li class="user-item-enter">
-            <a href="№" class="user-link user--enter">Коля Петухов</a>
-            <a href="№" class="user--exit">Выйти</a>
-          </li>
+        <div class="user-menu">
+          <div class="visually-hidden user-item-enter">
+            <a href="#" class="visually-hidden user-link user--enter">Войти</a>
+          </div>
+          <div class="user-item-enter">
+            <a href="#" class="user-link user--enter">Коля Петухов</a>
+            <a href="#" class="user--exit">Выйти</a>
+          </div>
           <ul class="basket-item">
             <li class="user-item">
-              <a href="№" class="user-link user--compare">Сравнить</a>
+              <a href="#" class="user-link user--compare">Сравнить</a>
             </li>
             <li class="user-item">
               <div class="basket-active">
                 <a href="#" class="user-link user--basket">Корзина</a>
+                <span class="basket-count">2</span>
                 <div class="sub-basket">
                   <ul class="sub-basket-list">
                     <li class="sub-basket-item">
@@ -43,16 +45,16 @@
                         <img class="sub-product-basket" src="images/product-1-small.jpg" alt="product-backet-1"
                           width="39" height="43">
                         <h3 class="sub-product-name">Любительская селфи-палка</h3>
-                        <button class="sub-basket-button"></button>
                       </a>
+                      <button class="sub-basket-button"></button>
                     </li>
                     <li class="sub-basket-item">
                       <a class="sub-basket-link" href="#">
                         <img class="sub-product-basket" src="images/product-2-small.jpg" alt="product-backet-2"
                           width="39" height="43">
                         <h3 class="sub-product-name">Профессиональная селфи-палка</h3>
-                        <button class="sub-basket-button"></button>
                       </a>
+                      <button class="sub-basket-button"></button>
                     </li>
                     <li class="sum-basket-item">
                       <p class="sum-basket-product">Товаров: 2</p>
@@ -64,7 +66,7 @@
               </div>
             </li>
           </ul>
-        </ul>
+        </div>
       </div>
       <div class="navigation-block">
         <div class="catalog-block">
@@ -113,7 +115,6 @@
   </header>
   <main class="main-inner">
     <div class="navigation-main">
-      <div class="navigation-main-block">
         <h1 class="navigation-title">Моноподы для селфи</h1>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -133,7 +134,7 @@
         <div class="catalog-blocks">
           <div class="filter-block">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-            <form class="catalog-filter" action="" method="get">
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <h3 class="catalog-title">Фильтр:</h3>
               <fieldset class="catalog-sum-group">
                 <legend class="catalog-sum-title">Стоимость</legend>
@@ -196,7 +197,6 @@
                     <input id="no" class="visually-hidden control-input" type="radio" name="exists">
                     <label for="no" class="control-parametr">Нет</label>
                   </li>
-                  </li>
                 </ul>
               </fieldset>
               <button class="special-link button-show">Показать</button>
@@ -211,19 +211,21 @@
                 <option value="popular">Сначала дорогое</option>
               </select>
               <button class="button-up button-light">
-                <svg class="button-svg-catalog" width="12" height="10" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+                <svg class="button-svg-catalog" width="12" height="10" viewBox="0 0 12 10"
+                  xmlns="http://www.w3.org/2000/svg">
                   <g id="sort-up" clip-path="url(#clip0_48837_186)">
-                  <path id="Vector" d="M6 0L11.5 10H0.5"/>
+                    <path id="Vector" d="M6 0L11.5 10H0.5" />
                   </g>
-                  </svg>
+                </svg>
                 <span class="visually-hidden">Отсортировать по возрастанию</span>
               </button>
-              <butuon class="button-down">
-                <svg class="button-svg-catalog" width="12" height="10" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+              <button class="button-down">
+                <svg class="button-svg-catalog" width="12" height="10" viewBox="0 0 12 10"
+                  xmlns="http://www.w3.org/2000/svg">
                   <g id="sort-down" clip-path="url(#clip0_48837_186)">
-                  <path id="Vector" d="M6 0L11.5 10H0.5"/>
+                    <path id="Vector" d="M6 0L11.5 10H0.5" />
                   </g>
-                  </svg>
+                </svg>
                 <span class="visually-hidden">Отсортировать по убыванию</span>
               </button>
             </div>
@@ -231,14 +233,13 @@
               <div class="product-image-block">
                 <ul class="product-list">
                   <li class="product-item">
-                    <a class="product-link" href="#">
+                    <a class="product-link product-neww" href="#">
                       <span class="product-new"></span>
                       <img class="product-image" src="./images/product/product-1.jpg" width="360" height="380" alt="#">
                       <h3 class="product-title">Любительская селфи-палка</h3>
                       <p class="product-price">500 ₽</p>
                     </a>
                   </li>
-
                   <li class="product-item">
                     <a class="product-link" href="#">
                       <img class="product-image" src="./images/product/product-2.jpg" width="360" height="380" alt="#">
@@ -263,10 +264,10 @@
                 </ul>
               </div>
               <button class="download-more">Загрузить ещё</button>
-              <ul class="pagination">
-                <li class="pagination-item">
+              <div class="pagination">
+                <p class="pagination-item">
                   <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
-                </li>
+                </p>
                 <ul class="pagination-number">
                   <li class="pagination-item-number">
                     <a class="pagination-link-number pagination-current">1</a>
@@ -284,29 +285,29 @@
                     <a class="pagination-link-number" href="#">15</a>
                   </li>
                 </ul>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-next " href="#">Вперед</a>
-                </li>
+                <p class="pagination-item">
+                  <a class="pagination-link pagination-next" href="#">Вперед</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
     </section>
   </main>
-
   <footer class="page-footer">
-    <div class="page-footer-width catalog-footer-width">
-      <div class="page-footer-box">
+    <div class="page-footer-width">
         <section class="page-footer-address">
           <a class="logo-link-footer" href="index.html">
-          <img class="page-footer-logo" src="images/logo-footer.svg" alt="Логотип Device.">
-        </a>
+            <img class="page-footer-logo" src="images/logo-footer.svg" alt="Логотип Device.">
+          </a>
+          <h3 class="visually-hidden">Наш адресс</h3>
           <address class="page-footer-address-more">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
           <span class="footer-strip"></span>
         </section>
         <section class="footer-navigation-social">
-          <ul class="footer-navigation-list" class="footer-navigation-contacts">
+          <h3 class="visually-hidden">Наши соцсети и блок навигации</h3>
+          <ul class="footer-navigation-list footer-navigation-contacts">
             <li class="footer-navigation-item">
               <a class=footer-navigation-link href="#">Доставка</a>
             </li>

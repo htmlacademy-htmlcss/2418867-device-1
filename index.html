@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
 </head>
 
 <body>
@@ -21,48 +21,47 @@
           </label>
           <button class="search-button" type="submit">Найти</button>
         </form>
-        <ul class="user-menu">
-          <li class="user-item-enter">
+        <div class="user-menu">
+          <div class="user-item-enter">
             <a href="#" class="user-link user--enter">Войти</a>
-          </li>
-          <li class="basket-item">
-            <ul class="basket-item">
-              <li class="user-item">
-                <a href="#" class="user-link user--compare">Сравнить</a>
-              </li>
-              <li class="user-item">
-                <div class="basket-active">
-                  <a href="#" class="user-link user--basket">Корзина</a>
-                  <div class="sub-basket">
-                    <ul class="sub-basket-list">
-                      <li class="sub-basket-item">
-                        <a class="sub-basket-link" href="#">
-                          <img class="sub-product-basket" src="images/product-1-small.jpg" alt="product-backet-1"
-                            width="39" height="43">
-                          <h3 class="sub-product-name">Любительская селфи-палка</h3>
-                        </a>
-                        <button class="sub-basket-button"></button>
-                      </li>
-                      <li class="sub-basket-item">
-                        <a class="sub-basket-link" href="#">
-                          <img class="sub-product-basket" src="images/product-2-small.jpg" alt="product-backet-2"
-                            width="39" height="43">
-                          <h3 class="sub-product-name">Профессиональная селфи-палка</h3>
-                        </a>
-                        <button class="sub-basket-button"></button>
-                      </li>
-                      <li class="sum-basket-item">
-                        <p class="sum-basket-product">Товаров: 2</p>
-                        <p class="sum-basket-value">Сумма: 2000 ₽</p>
-                      </li>
-                    </ul>
-                    <a class="sum-basket-link" href="#">Открыть корзину</a>
-                  </div>
+          </div>
+          <ul class="basket-item">
+            <li class="user-item">
+              <a href="#" class="user-link user--compare">Сравнить</a>
+            </li>
+            <li class="user-item">
+              <div class="basket-active">
+                <a href="#" class="user-link user--basket">Корзина</a>
+                <span class="basket-count">2</span>
+                <div class="sub-basket">
+                  <ul class="sub-basket-list">
+                    <li class="sub-basket-item">
+                      <a class="sub-basket-link" href="#">
+                        <img class="sub-product-basket" src="images/product-1-small.jpg" alt="product-backet-1"
+                          width="39" height="43">
+                        <h3 class="sub-product-name">Любительская селфи-палка</h3>
+                      </a>
+                      <button class="sub-basket-button"></button>
+                    </li>
+                    <li class="sub-basket-item">
+                      <a class="sub-basket-link" href="#">
+                        <img class="sub-product-basket" src="images/product-2-small.jpg" alt="product-backet-2"
+                          width="39" height="43">
+                        <h3 class="sub-product-name">Профессиональная селфи-палка</h3>
+                      </a>
+                      <button class="sub-basket-button"></button>
+                    </li>
+                    <li class="sum-basket-item">
+                      <p class="sum-basket-product">Товаров: 2</p>
+                      <p class="sum-basket-value">Сумма: 2000 ₽</p>
+                    </li>
+                  </ul>
+                  <a class="sum-basket-link" href="#">Открыть корзину</a>
                 </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="navigation-block">
         <div class="catalog-block">
@@ -113,7 +112,6 @@
     <h1 class="visually-hidden">Магазин квадрокопторов Девайс</h1>
     <section class="welcome">
       <h2 class="visually-hidden">Предложения недели</h2>
-      <div class="slider-container">
         <ul class="slider-list">
           <li class="slider-screen slider-screen-active">
             <span class="slider-number">01</span>
@@ -272,7 +270,6 @@
       <a class="delivery-rare-link" href="#">Доставим редкий товар под заказ</a>
     </section>
     <section class="info-contacts">
-      <div class="info-contact">
         <div class="info">
           <h2 class="info-about">О нас</h2>
           <p class="info-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
@@ -331,7 +328,6 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer-width">
-      <div class="page-footer-box">
         <section class="page-footer-address">
           <a class="logo-link-footer" href="index.html">
             <img class="page-footer-logo" src="images/logo-footer.svg" alt="Логотип Device.">
@@ -442,7 +438,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </div>
   </footer>
   <div class="modal modal--close">
@@ -455,11 +450,13 @@
         <ul class="modal-list">
           <li class="modal-item">
             <p class="subtitle-modal subtitle-modal-name">Ваше имя:</p>
-            <input class="modal-name-input modal-name" name="name1111" type="text" placeholder="Введите имя" required>
+            <input class="modal-name-input modal-name" name="name" type="text" placeholder="Введите имя" required>
           </li>
           <li class="modal-item">
             <p class="subtitle-modal">Ваш e-mail:</p>
-            <input class="modal-name-input modal-email" name="email" type="email" placeholder="Введите email" required>
+            <input class="modal-name-input modal-email modal-input-error" name="email" type="email"
+              placeholder="Введите email" required>
+            <span class="modal-error">Забавный у вас адрес</span>
           </li>
         </ul>
         <ul class="modal-list-amount">
@@ -467,25 +464,26 @@
             <p class="subtitle-modal subtitle-modal-what">Что нужно привезти:</p>
             <input class="modal-text-input" name="text" type="text" placeholder="В свободной форме" required>
           </li>
-          <ol class="amount-modal">
+          <li class="amount-modal">
             <p class="subtitle-modal subtitle-modal-amount">Количество:</p>
-            <span class="tooltip">
-              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-value">
-                <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="4" height="12" viewBox="0 0 4 12"
-                  fill="none">
-                  <path d="M3 0H1V2H3V0Z" fill="black" />
-                  <path d="M3 4H1V12H3V4Z" fill="black" />
-                </svg>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-value">Постараемся найти, сколько нужно.
-                  Привезём сколько получится по требованиям к провозу багажа.</span>
-              </button>
-            </span>
-            <li class="less-item">
+            <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-value">
+              <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="4" height="12" viewBox="0 0 4 12"
+                fill="none">
+                <path d="M3 0H1V2H3V0Z" fill="black" />
+                <path d="M3 4H1V12H3V4Z" fill="black" />
+              </svg>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label-value">
+                <span class="tooltip-text-wrapper">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                </span>
+              </span>
+            </button>
+            <p class="less-item less-item-error">
               <button type="button" class="button-click-down" onclick="this.nextElementSibling.stepDown()">-</button>
               <input type="number" class="less-one" min="0" max="100" value="1" readonly>
               <button type="button" class="button-click-up" onclick="this.previousElementSibling.stepUp()">+</button>
-            </li>
-          </ol>
+            </p>
+          </li>
         </ul>
         <button class="special-link button-send">Отправить</button>
       </form>
