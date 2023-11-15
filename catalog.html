@@ -2,24 +2,26 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Каталог</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="icon" href="favicon.ico" />
+  <!-- 32×32 -->
 </head>
 
 <body>
   <header class="page-header">
     <span class="yellow-line"></span>
     <a class="logo-link" href="index.html">
-      <img class=" logo" src="images/logo-header.svg" alt="Логотип Device.">
+      <img class="logo" src="images/logo-header.svg" alt="Логотип Device." />
     </a>
     <nav class="navigation">
       <div class="search-line">
         <form class="search-form" action="https://echo.htmlacademy.ru/">
           <label class="search-label">
             <input class="search-input search-input-catalog" type="text" name="search-text" placeholder="Текст поиска"
-              required>
+              required />
           </label>
           <button type="submit" class="search-button">Найти</button>
         </form>
@@ -44,19 +46,25 @@
                   <ul class="sub-basket-list">
                     <li class="sub-basket-item">
                       <a class="sub-basket-link" href="#">
-                        <img class="sub-product-basket" src="images/product-1-small.jpg" alt="product-backet-1"
-                          width="39" height="43">
-                        <h3 class="sub-product-name">Любительская селфи-палка</h3>
+                        <img class="sub-product-basket" src="images/product-small/product-1-small.jpg"
+                          alt="Товар-корзины-1." width="39" height="43" />
+                        <p class="sub-product-name">
+                          Любительская селфи-палка
+                        </p>
                       </a>
-                      <button class="sub-basket-button"></button>
+                      <button class="sub-basket-button" type="button"></button>
+                      <span class="visually-hidden">Удалить.</span>
                     </li>
                     <li class="sub-basket-item">
                       <a class="sub-basket-link" href="#">
-                        <img class="sub-product-basket" src="images/product-2-small.jpg" alt="product-backet-2"
-                          width="39" height="43">
-                        <h3 class="sub-product-name">Профессиональная селфи-палка</h3>
+                        <img class="sub-product-basket" src="images/product-small/product-2-small.jpg"
+                          alt="Товар-корзины-2." width="39" height="43" />
+                        <p class="sub-product-name">
+                          Профессиональная селфи-палка
+                        </p>
                       </a>
-                      <button class="sub-basket-button"></button>
+                      <button class="sub-basket-button" type="button"></button>
+                      <span class="visually-hidden">Удалить.</span>
                     </li>
                     <li class="sum-basket-item">
                       <p class="sum-basket-product">Товаров: 2</p>
@@ -116,7 +124,6 @@
     </nav>
   </header>
   <main class="main-inner">
-
     <div class="navigation-main">
       <h1 class="navigation-title">Моноподы для селфи</h1>
       <ul class="navigation-list">
@@ -143,20 +150,22 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="width: 104px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
                   </div>
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
-                      от <input class="range-input" type="number" value="0" name="min-price" style="width: 9px">
+                      от
+                      <input class="range-input" type="number" value="0" name="min-price" style="width: 9px" />
                     </label>
                     <label class="catalog-filter-label">
-                      до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
+                      до
+                      <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px" />
                     </label>
                   </div>
                 </div>
@@ -165,25 +174,25 @@
                 <legend class="catalog-color-title">Цвет</legend>
                 <ul class="catalog-color-list">
                   <li class="catalog-color-item">
-                    <input class="visually-hidden checkbox-input" type="checkbox" id="black" name="black" checked>
+                    <input class="visually-hidden checkbox-input" type="checkbox" id="black" name="black" checked />
                     <label for="black" class="checkbox-label">Черный</label>
                   </li>
 
                   <li class="catalog-color-item">
-                    <input class="visually-hidden checkbox-input" type="checkbox" id="white" name="white" checked>
+                    <input class="visually-hidden checkbox-input" type="checkbox" id="white" name="white" checked />
                     <label for="white" class="checkbox-label">Белый</label>
                   </li>
 
                   <li class="catalog-color-item">
-                    <input class="visually-hidden checkbox-input" type="checkbox" id="blue" name="blue">
+                    <input class="visually-hidden checkbox-input" type="checkbox" id="blue" name="blue" />
                     <label for="blue" class="checkbox-label">Синий</label>
                   </li>
                   <li class="catalog-color-item">
-                    <input class="visually-hidden checkbox-input" type="checkbox" id="red" name="red">
+                    <input class="visually-hidden checkbox-input" type="checkbox" id="red" name="red" />
                     <label for="red" class="checkbox-label">Красный</label>
                   </li>
                   <li class="catalog-color-item">
-                    <input class="visually-hidden checkbox-input" type="checkbox" id="pink" name="pink">
+                    <input class="visually-hidden checkbox-input" type="checkbox" id="pink" name="pink" />
                     <label for="pink" class="checkbox-label">Розовый</label>
                   </li>
                 </ul>
@@ -192,16 +201,18 @@
                 <legend class="catalog-parametr-title">Bluetooth</legend>
                 <ul class="catalog-parametr-list">
                   <li class="catalog-parametr-item">
-                    <input id="exist" class="visually-hidden control-input" type="radio" name="exists" checked>
+                    <input id="exist" class="visually-hidden control-input" type="radio" name="exists" checked />
                     <label for="exist" class="control-parametr">Есть</label>
                   </li>
                   <li class="catalog-parametr-item">
-                    <input id="no" class="visually-hidden control-input" type="radio" name="exists">
+                    <input id="no" class="visually-hidden control-input" type="radio" name="exists" />
                     <label for="no" class="control-parametr">Нет</label>
                   </li>
                 </ul>
               </fieldset>
-              <button class="special-link button-show">Показать</button>
+              <button class="special-link button-show" type="button">
+                Показать
+              </button>
             </form>
           </div>
           <div class="product-block">
@@ -212,8 +223,8 @@
                 <option value="popular">Сначала дешёвое</option>
                 <option value="popular">Сначала дорогое</option>
               </select>
-              <button class="button-up button-light">
-                <svg class="button-svg-catalog" width="12" height="10" viewBox="0 0 12 10"
+              <button class="button-up button-light" type="button">
+                <svg class="button-svg-catalog" role="img" width="12" height="10" viewBox="0 0 12 10"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_48837_186)">
                     <path d="M6 0L11.5 10H0.5" />
@@ -221,8 +232,8 @@
                 </svg>
                 <span class="visually-hidden">Отсортировать по возрастанию</span>
               </button>
-              <button class="button-down">
-                <svg class="button-svg-catalog" width="12" height="10" viewBox="0 0 12 10"
+              <button class="button-down" type="button">
+                <svg class="button-svg-catalog" role="img" width="12" height="10" viewBox="0 0 12 10"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_48837_186)">
                     <path d="M6 0L11.5 10H0.5" />
@@ -236,35 +247,45 @@
                 <ul class="product-list">
                   <li class="product-item product-item-new">
                     <a class="product-link product-neww" href="#">
-                      <img class="product-image" src="./images/product/product-1.jpg" width="360" height="380" alt="#">
+                      <img class="product-image" src="./images/product/product-1.jpg" width="360" height="380"
+                        alt="Любительская селфи-палка." />
                       <h3 class="product-title">Любительская селфи-палка</h3>
                       <p class="product-price">500 ₽</p>
                     </a>
                   </li>
                   <li class="product-item">
                     <a class="product-link" href="#">
-                      <img class="product-image" src="./images/product/product-2.jpg" width="360" height="380" alt="#">
-                      <h3 class="product-title">Профессиональная селфи-палка</h3>
+                      <img class="product-image" src="./images/product/product-2.jpg" width="360" height="380"
+                        alt="Профессиональная селфи-палка." />
+                      <h3 class="product-title">
+                        Профессиональная селфи-палка
+                      </h3>
                       <p class="product-price">1 500 ₽</p>
                     </a>
                   </li>
                   <li class="product-item">
                     <a class="product-link" href="#">
-                      <img class="product-image" src="./images/product/product-3.jpg" width="360" height="380" alt="#">
+                      <img class="product-image" src="./images/product/product-3.jpg" width="360" height="380"
+                        alt="Непотопляемая селфи-палка." />
                       <h3 class="product-title">Непотопляемая селфи-палка</h3>
                       <p class="product-price">2 500 ₽</p>
                     </a>
                   </li>
                   <li class="product-item">
                     <a class="product-link" href="#">
-                      <img class="product-image" src="./images/product/product-4.jpg" width="360" height="380" alt="#">
-                      <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
+                      <img class="product-image" src="./images/product/product-4.jpg" width="360" height="380"
+                        alt="Селфи-палка «Следуй за мной»." />
+                      <h3 class="product-title">
+                        Селфи-палка «Следуй за мной»
+                      </h3>
                       <p class="product-price">1 500 ₽</p>
                     </a>
                   </li>
                 </ul>
               </div>
-              <button class="download-more">Загрузить ещё</button>
+              <button class="download-more" type="button">
+                Загрузить ещё
+              </button>
               <div class="pagination">
                 <p class="pagination-item">
                   <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
@@ -300,30 +321,32 @@
     <div class="page-footer-width">
       <section class="page-footer-address">
         <a class="logo-link-footer" href="index.html">
-          <img class="page-footer-logo" src="images/logo-footer.svg" alt="Логотип Device.">
+          <img class="page-footer-logo" src="images/logo-footer.svg" alt="Логотип Device." />
         </a>
         <h3 class="visually-hidden">Наш адресс</h3>
-        <address class="page-footer-address-more">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+        <address class="page-footer-address-more">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </address>
         <span class="footer-strip"></span>
       </section>
       <section class="footer-navigation-social">
         <h3 class="visually-hidden">Наши соцсети и блок навигации</h3>
         <ul class="footer-navigation-list footer-navigation-contacts">
           <li class="footer-navigation-item">
-            <a class=footer-navigation-link href="#">Доставка</a>
+            <a class="footer-navigation-link" href="#">Доставка</a>
           </li>
           <li class="footer-navigation-item">
-            <a class=footer-navigation-link href="#">Гарантия</a>
+            <a class="footer-navigation-link" href="#">Гарантия</a>
           </li>
           <li class="footer-navigation-item">
-            <a class=footer-navigation-link href="#">Контакты</a>
+            <a class="footer-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link" href="#">
               <span class="visually-hidden">Телеграм</span>
-              <svg class="footer-social-tl" width="14" height="12" viewBox="0 0 14 12" fill="none"
+              <svg class="footer-social-tl" role="img" width="14" height="12" viewBox="0 0 14 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_48714_1072)">
                   <path
@@ -341,7 +364,7 @@
           <li class="footer-social-item">
             <a class="footer-social-link" href="#">
               <span class="visually-hidden">YouTube</span>
-              <svg class="footer-social-yb" width="16" height="11" viewBox="0 0 16 11" fill="none"
+              <svg class="footer-social-yb" role="img" width="16" height="11" viewBox="0 0 16 11" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_48714_1077)">
                   <path
@@ -357,7 +380,7 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="#">
+            <a class="footer-social-link" role="img" href="#">
               <svg class="footer-social-tw" width="15" height="15" viewBox="0 0 15 15" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -371,12 +394,12 @@
       </section>
       <ul class="footer-phone">
         <li class="footer-phone-item">
-          <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <a class="contacts-phone-footer" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </li>
         <li class="footer-logo-item">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <svg class="htmlacademy-svg" width="115" height="33" viewBox="0 0 115 33" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="htmlacademy-svg" role="img" aria-label="htmlacademy" width="115" height="33"
+              viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g>
                 <g>
                   <path d="M0 12.9V15.5H2.5V12.9H0Z" />
@@ -411,4 +434,5 @@
     </div>
   </footer>
 </body>
+
 </html>
