@@ -45,8 +45,9 @@
                           Любительская селфи-палка
                         </p>
                       </a>
-                      <button class="sub-basket-button" type="button"></button>
-                      <span class="visually-hidden">Удалить.</span>
+                      <button class="sub-basket-button" type="button">
+                        <span class="visually-hidden">Удалить.</span>
+                      </button>
                     </li>
                     <li class="sub-basket-item">
                       <a class="sub-basket-link" href="#">
@@ -56,8 +57,9 @@
                           Профессиональная селфи-палка
                         </p>
                       </a>
-                      <button class="sub-basket-button" type="button"></button>
-                      <span class="visually-hidden">Удалить.</span>
+                      <button class="sub-basket-button" type="button">
+                        <span class="visually-hidden">Удалить.</span>
+                      </button>
                     </li>
                     <li class="sum-basket-item">
                       <p class="sum-basket-product">Товаров: 2</p>
@@ -516,7 +518,7 @@
               required />
           </li>
           <li class="amount-modal">
-            <label class="subtitle-modal subtitle-modal-amount">Количество:</label>
+            <label class="subtitle-modal subtitle-modal-amount" for="amount-product" >Количество:</label>
             <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-value">
               <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="4" height="12" viewBox="0 0 4 12"
                 fill="none">
@@ -530,13 +532,12 @@
                 </span>
               </span>
             </button>
-
             <!-- в случае 0 - ошибка - добавить класс less-item-error -->
             <p class="less-item">
               <button type="button" class="button-click-down" onclick="this.nextElementSibling.stepDown()">
                 -
               </button>
-              <input type="number" class="less-one" min="0" max="100" value="1" readonly />
+              <input type="number" class="less-one" min="0" max="100" value="1" readonly id="amount-product" name="amount-product" />
               <button type="button" class="button-click-up" onclick="this.previousElementSibling.stepUp()">
                 +
               </button>
